@@ -3,13 +3,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
   }
   
   .image-row {
     display: flex;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
     overflow-x: auto;
+    width: 100%;
+    padding: 0 10px;
   }
   
   .image-row img {
@@ -25,26 +31,26 @@
   }
   
   .preview {
-    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px; /* Adjust as needed for the preview size */
   }
   
   .preview .meme {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    padding-top: 100%; /* Maintain aspect ratio */
   }
   
   .preview img {
-    width: 200px;
-    height: 200px;
-  }
-  
-  .layer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  
+  .layer {
     object-fit: contain;
   }
   
